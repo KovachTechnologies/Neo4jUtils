@@ -47,3 +47,37 @@ Dependencies: Neo4j cluster fully operational and data migrated; Platform founda
 One-time effort ≈ 5 SP  
 
 Dependencies: Neo4j cluster fully operational with data migrated; Platform foundation complete.
+
+**Testing and validation**
+
+1. Define platform engineer test plan and success criteria (data reconciliation, functional, performance, security) - 1 SP  
+2. Execute data reconciliation between on-prem and AWS Neo4j (counts, checksums, sample queries) - 2 SP  
+3. Run functional tests for Neo4j, Linkurious, NeoDash, and Protegrity flows - 2 SP  
+4. Perform performance and load testing of the AWS cluster - 2 SP  
+5. Complete security checks (access controls, encryption, tokenization validation) - 1.5 SP  
+6. Execute parallel run between on-prem and AWS and document results - 2 SP  
+
+One-time effort ≈ 10.5 SP  
+
+Dependencies: Neo4j installation/migration, Linkurious, NeoDash, and security components complete; Platform foundation and monitoring in place.  
+
+**Cutover and stabilization**
+
+1. Develop detailed production cutover plan, runbook, and fallback/rollback steps - 2 SP  
+2. Execute production cutover and validate critical paths - 2 SP  
+3. Conduct post-cutover monitoring, issue triage, and hypercare support - 2 SP  
+4. Confirm stabilization criteria met and reduce or decommission on-prem usage - 1.5 SP  
+
+One-time effort ≈ 7.5 SP  
+
+Dependencies: Successful completion of Testing and validation (including parallel run); all prior platform, Neo4j, Linkurious, NeoDash, and security work complete.  
+
+**Devops Dependency**
+
+1. Submit and track request for 25 EC2 instances across Dev, Pre-Prod, Prod, and EXP environments - 1 SP  
+2. Coordinate with DevOps on instance sizing, AMI, networking, and security group requirements - 1 SP  
+3. Validate instance provisioning, availability, and hand-off to Platform team - 1 SP  
+
+One-time effort ≈ 3 SP  
+
+Dependencies: Platform foundation (AVM accounts, networking, IAM, environment design) complete; sizing inputs from earlier capacity planning.
